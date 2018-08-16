@@ -1,0 +1,87 @@
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+  name: nifi
+spec:
+  serviceName: nifi
+  replicas: 2
+  podManagementPolicy: Parallel
+  updateStrategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: nifi
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: "app"
+                    operator: In
+                    values:
+                    - nifi
+              topologyKey: "kubernetes.io/hostname"
+      containers:
+        - name: nifi
+          image: gcr.io/emerald-folio-200804/nifi:1.6.6
+          command: ["/bin/bash","-c"]
+          args: ["chmod +x /opt/nifi/run.sh; cd /opt/nifi && ./run.sh"]
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 7000
+            - containerPort: 8080
+            - containerPort: 8081
+            - containerPort: 8443
+            - containerPort: 2882
+          volumeMounts:
+            - name: runconfig
+              mountPath: /opt/nifi/run.sh
+              subPath: run.sh
+              readOnly: false
+            - name: datafiles
+              mountPath: /opt/datafiles
+            - name: certfiles
+              mountPath: /opt/certfiles
+            - name: scriptfiles
+              mountPath: /opt/scriptfiles
+          env:
+            - name: ZK_NODES_LIST
+              value: "zk-0.zk-headless.zookeeper.svc.cluster.local,zk-1.zk-headless.zookeeper.svc.cluster.local,zk-2.zk-headless.zookeeper.svc.cluster.local"
+            - name: ZK_MONITOR_PORT
+              value: "2888"
+            - name: IS_CLUSTER_NODE
+              value: "yes"
+            - name: BANNER_TEXT
+              value: "Nifi Cluster"
+      volumes:
+      - name: runconfig
+        configMap:
+          defaultMode: 0775
+          name: nifi-bootstrap
+  volumeClaimTemplates:
+  - metadata:
+      name: datafiles
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 5Gi
+      storageClassName: standard
+  - metadata:
+      name: certfiles
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
+      storageClassName: standard
+  - metadata:
+      name: scriptfiles
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
+      storageClassName: standard
