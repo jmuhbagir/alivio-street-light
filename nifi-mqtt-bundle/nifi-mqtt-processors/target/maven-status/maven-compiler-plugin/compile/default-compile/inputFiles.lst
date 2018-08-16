@@ -1,0 +1,5 @@
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/main/java/org/apache/nifi/processors/mqtt/common/MqttConstants.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/main/java/org/apache/nifi/processors/mqtt/common/MQTTQueueMessage.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/main/java/org/apache/nifi/processors/mqtt/PublishMQTT.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/main/java/org/apache/nifi/processors/mqtt/common/AbstractMQTTProcessor.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/main/java/org/apache/nifi/processors/mqtt/ConsumeMQTT.java

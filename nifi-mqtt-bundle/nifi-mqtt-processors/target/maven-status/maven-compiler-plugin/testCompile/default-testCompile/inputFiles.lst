@@ -1,0 +1,11 @@
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/common/MqttTestUtils.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/common/TestPublishMqttCommon.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/TestPublishMQTT.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/TestConsumeMQTT.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/common/MqttTestClient.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/integration/TestPublishMQTT.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/common/TestConsumeMqttCommon.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/integration/TestPublishAndSubscribeMqttIntegration.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/integration/TestConsumeMqttSSL.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/integration/TestConsumeMQTT.java
+/root/Documents/kubernetes-pods/kubernetes-nifi-cluster/nifi-rel-nifi-1.6.0/nifi-nar-bundles/nifi-mqtt-bundle/nifi-mqtt-processors/src/test/java/org/apache/nifi/processors/mqtt/integration/TestPublishMqttSSL.java

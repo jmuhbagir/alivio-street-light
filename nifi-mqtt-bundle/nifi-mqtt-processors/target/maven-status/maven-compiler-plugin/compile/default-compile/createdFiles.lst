@@ -1,0 +1,12 @@
+org/apache/nifi/processors/mqtt/PublishMQTT.class
+org/apache/nifi/processors/mqtt/PublishMQTT$1.class
+org/apache/nifi/processors/mqtt/common/MqttConstants.class
+org/apache/nifi/processors/mqtt/ConsumeMQTT$ConsumeMQTTCallback.class
+org/apache/nifi/processors/mqtt/common/AbstractMQTTProcessor$1.class
+org/apache/nifi/processors/mqtt/ConsumeMQTT.class
+org/apache/nifi/processors/mqtt/common/AbstractMQTTProcessor.class
+org/apache/nifi/processors/mqtt/PublishMQTT$PublishMQTTCallback.class
+org/apache/nifi/processors/mqtt/common/AbstractMQTTProcessor$2.class
+org/apache/nifi/processors/mqtt/common/MQTTQueueMessage.class
+org/apache/nifi/processors/mqtt/common/AbstractMQTTProcessor$3.class
+org/apache/nifi/processors/mqtt/ConsumeMQTT$1.class
